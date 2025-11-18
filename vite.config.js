@@ -6,7 +6,7 @@ export default defineConfig({
     publicDir: '../static',
     base: './',
     build: {
-        outDir: 'dist',
+        outDir: '../dist',
         emptyOutDir: true,
         rollupOptions: {
             output: {
