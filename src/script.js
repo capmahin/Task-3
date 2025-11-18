@@ -117,7 +117,7 @@ function loadModel(modelPath, scale = 1) {
 }
 
 // Load the initial model
-loadModel('/LittlestTokyo.glb', 0.01);
+loadModel('./LittlestTokyo.glb', 0.01);
 
 // --- Model Switching ---
 // Add event listener for the switch button
@@ -125,12 +125,12 @@ document.getElementById('switchModel').addEventListener('click', function() {
     // Switch between models
     if (currentModelType === 'littlestTokyo') {
         // Switch to Soldier
-        loadModel('/Soldier.glb', 1);
+        loadModel('./Soldier.glb', 1);
         currentModelType = 'soldier';
         this.textContent = 'Switch to LittlestTokyo';
     } else {
         // Switch to LittlestTokyo
-        loadModel('/LittlestTokyo.glb', 0.01);
+        loadModel('./LittlestTokyo.glb', 0.01);
         currentModelType = 'littlestTokyo';
         this.textContent = 'Switch to Soldier';
     }
